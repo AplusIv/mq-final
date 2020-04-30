@@ -63,7 +63,7 @@
           <picture class="article-pic footballer-pic">
             <source srcset="images/footballer_192.png" media="(max-width: 640px)">
             <source srcset="images/footballer_497.png" media="(max-width: 960px)">
-            <source srcset="images/footballer_566.png">
+            <source srcset="images/footballer_566.png" media="(min-width: 961px)">
             <img src="images/footballer_566.png" alt="footballer">
           </picture>
           <div class="article-body athlets-article-body">
@@ -87,7 +87,7 @@
           <picture class="article-pic basketballer-pic">
             <source srcset="images/basketballer_302.png" media="(max-width: 640px)">
             <source srcset="images/basketballer_436.png" media="(max-width: 960px)">
-            <source srcset="images/basketballer_991.png">
+            <source srcset="images/basketballer_991.png" media="(min-width: 961px)">
             <img src="images/basketballer_991.png" alt="basketballer">
           </picture>
           <div class="article-body players-article-body">
@@ -110,13 +110,14 @@
 
       <div class="motivations-articles">
         <article class="motivation-article active-motivation-article">
-<!-- ??? Правильно ли задан тег Picture? Мне кажется, что у меня всегда грузит изображение из img, а не выбирает из source, если судит по инспектору из Chrome. Не пойму, что не так делаю. Может медиа запросы, порядок? Но я пробовал переставлять - безрезультатно -->
           <picture class="motivation-pic be-active-pic">
-            <source srcset="images/be-active_960.jpg">
-            <source srcset="images/be-active_960.jpg" media="(max-width: 960px)">
             <source srcset="images/be-active_640.jpg" media="(max-width: 640px)">
+            <source srcset="images/be-active_960.jpg" media="(max-width: 960px)">
             <!-- Изображение шириной 1024px не соответствует макету -->
-            <img src="images/be-active_960.jpg" alt="Player with a smartphone">
+            <source srcset="images/be-active_960.jpg" media="(min-width: 961px)">
+<!-- ??? Не пойму, вы мне писали заменить изображение, а оно по размерам не подходит. В макете десктопном указан файл шириной 960рх) Да и по размерам оно идеально подходит в данный макет. Куда мне подключать 1024рх? у меня едет вся верстка, если я добавляю его в десктоп. Мне же не нужно фиксировать ширину и высоту? -->
+
+            <img src="images/be-active_1024.jpg" alt="Player with a smartphone">
           </picture>
           <div class="motivation-article-body">
             <h3 class="motivation-article-title">Be active</h3>
@@ -141,7 +142,7 @@
           <picture class="motivation-pic work-it-pic">
             <source srcset="images/work-it_640.jpg" media="(max-width: 640px)">
             <source srcset="images/work-it_960.jpg" media="(max-width: 960px)">
-            <source srcset="images/work-it_1024.jpg">
+            <source srcset="images/work-it_1024.jpg" media="(min-width: 961px)">
             <img src="images/work-it_1024.jpg" alt="Players with a trophy">
           </picture>
           <div class="motivation-article-body">
